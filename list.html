@@ -1,0 +1,20 @@
+<style>
+    * {
+        text-align: center !important;
+    }
+</style>
+<script>
+    function includeCss(filename) {
+        var head = document.getElementsByTagName('head')[0];
+        var link = document.createElement('link');
+        link.href = filename;
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        head.appendChild(link)
+    }
+    includeCss('/main-style.css')
+</script>
+<h3>
+    该页面下所有内容来自互联网，相关权利归相关权利人所有，如有侵权请联系<a href="mailto:3377911508@qq.com">3377911508@qq.com</a>删除，本网站保留最终解释权。
+</h3>
+<!-- autoindex for nginx -->
