@@ -39,7 +39,7 @@
             date_diff = new Date(now_date-graduation_date);
             year_diff = date_diff.getUTCFullYear()>1970 ? date_diff.getUTCFullYear()-1970+'年':'';
             month_diff = date_diff.getUTCMonth()>0 ? date_diff.getUTCMonth()+'月':'';
-            day_diff = date_diff.getUTCDate()>0 ? date_diff.getUTCDate()+'天':'';
+            day_diff = date_diff.getUTCDate()>1 ? date_diff.getUTCDate()-1+'天':'';
             hours_diff = date_diff.getUTCHours()+'时';
             minute_diff = date_diff.getUTCMinutes()+'分';
             sec_diff = date_diff.getUTCSeconds()+'秒';
